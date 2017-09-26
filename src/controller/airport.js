@@ -111,13 +111,15 @@ module.exports = {
                             airportWithDistance.push(airport);
                         }
                     })
-                    _.map(_.sortBy(airportWithDistance, 'distance'), 'value');
+
+                    var sortedList = _.sortBy(airportWithDistance,"distance");
+
                     response = {
                         status: 1,
                         message: "",
                         data: {
                             current: selectedAirport,
-                            near :  airportWithDistance.slice(0, 3)
+                            near :  sortedList.slice(0, 3)
                         }
                     }
                 }
