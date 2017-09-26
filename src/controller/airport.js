@@ -4,7 +4,7 @@ import radians from 'degrees-radians';
 
 var geodist = require('geodist')
 
-var dataFilePath = '../alaska_airports_II.json'
+var dataFilePath = 'alaska_airports_II.json'
 
 function getDistance(latlon){
     var lat1 = latlon.lat1;
