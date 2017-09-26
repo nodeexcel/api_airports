@@ -88,10 +88,6 @@ module.exports = {
                     response = {
                         status: 0,
                         message: "airport not found",
-                        data: {
-                            current: {},
-                            near :  []
-                        }
                     };
                 }else{
                     var latLon = {
